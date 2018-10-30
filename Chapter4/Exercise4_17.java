@@ -15,15 +15,15 @@ class Exercise4_17 {
 		boolean isLeapYear =
 		(year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
 			
-		if(month = Jan || Mar || Jul || Aug || Oct || Dec){
+		if(month = "Jan" || "Mar" || "Jul" || "Aug" || "Oct" || "Dec"){
 			int days = 31;
 			System.out.println("Days: " + days);
 		}
-		else if( month = Apr || Jun || Sep || Nov){
+		else if( month = "Apr" || "Jun" || "Sep" || "Nov"){
 			int days = 30;
 			System.out.println("Days: " + days);
 		}
-		else if( month = Feb){
+		else if( month = "Feb"){
 			if((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)){
 			int days = 29;
 			System.out.println("Days: " + days);
