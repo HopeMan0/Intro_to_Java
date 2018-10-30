@@ -3,6 +3,7 @@
 import java.util.*;
 
 class Exercise4_17 {
+
 	public static void main(String[] args) {
 		
 		Scanner input = new Scanner (System.in);
@@ -12,29 +13,43 @@ class Exercise4_17 {
 		String month 	= input.next();
 		
 		
-		boolean isLeapYear =
-		(year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
+		
+		switch (month.toLowerCase()) {
+			//31days
+			case "jan" : System.out.println("31 days");
+				break;
+			case "mar" : System.out.println("31 days");
+				break;
+			case "may" : System.out.println("31 days");
+				break;
+			case "jul" : System.out.println("31 days");
+				break;
+			case "aug" : System.out.println("31 days");
+				break;	
+			case "oct" : System.out.println("31 days");
+				break;
+			case "dec" : System.out.println("31 days");
+				break;	
+				
+				
+			//30 days	
+			case "apr" : System.out.println("31 days");
+				break;
+			case "jun" : System.out.println("31 days");
+				break;
+			case "sep" : System.out.println("31 days");
+				break;
+			case "nov" : System.out.println("31 days");
+				break;
 			
-		if(month = "Jan" || "Mar" || "Jul" || "Aug" || "Oct" || "Dec"){
-			int days = 31;
-			System.out.println("Days: " + days);
-		}
-		else if( month = "Apr" || "Jun" || "Sep" || "Nov"){
-			int days = 30;
-			System.out.println("Days: " + days);
-		}
-		else if( month = "Feb"){
-			if((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)){
-			int days = 29;
-			System.out.println("Days: " + days);
+			//28/29 days	
+			case "feb" : if((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)){
+				System.out.println("29 days");
 			}
 			else{
-				int days = 28;
-				System.out.println("Days: " + days);
+				System.out.println("28 days");
 			}
-		}
-		else{
-			System.out.println("Type a real month, silly");
+				break;
 		}
 	}
 }
