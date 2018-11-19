@@ -12,14 +12,14 @@ public class Account {
 	private Date dateCreated;
 
 
-Account() {
-	id = 0;
-	balance = 0;
+public Account() {
+	id = 0; 
+	balance = 100;
 	annualInterestRate = 0;
 	dateCreated = new Date();
 	}	
 
-Account(int newid, double newBalance) {
+public Account(int newid, double newBalance) {
 	id = newid;
 	balance = newBalance;
 	dateCreated = new Date();
