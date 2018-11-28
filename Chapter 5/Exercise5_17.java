@@ -14,8 +14,22 @@ class Exercise5_17 {
 			user = input.nextInt();
 		}
 		
-		for (int countDracula = 1; countDracula <= user; count++){
+		for (int count = 1; count <= user; count++){
+			//print space
+			for( int space = 1; space <= (user - count); space++){
+				System.out.print(" ");
+			}
 			
+			//prin left side
+			for(int left = count ; left >= 1; left--){
+				System.out.printf("%3d", left);
+			}
+			
+			//print right side
+			for (int right = 2; right <= count; right++){
+				System.out.printf("%3d", right);
+			}
+			System.out.println();
 		}
 	}
 }
