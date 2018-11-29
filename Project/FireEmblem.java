@@ -78,4 +78,11 @@ class FireEmblem {
 		
 	}
 	
+	//Combat
+	for(enemyHP = 1; enemyHP < 100){
+		if (enemyHP > 1){
+			continue;
+		}
+	}
+	
 }
