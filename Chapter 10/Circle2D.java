@@ -41,7 +41,7 @@ class Circle2D {
 	}
 	//return true if the point is in the circle
 	public boolean contains(double x, double y){
-		if (x < (this.x this.radius) && x > (this.x - this.radius) &&
+		if (x < (this.x + this.radius) && x > (this.x - this.radius) &&
 			y < (this.y + this.radius) && y > (this.y - this.radius)) {
 			return true;
 		}
@@ -50,7 +50,7 @@ class Circle2D {
 		}
 	}
 	//returns true if the circle is in the cricle
-	public boolean contains(Circe2D circle) {
+	public boolean contains(Circle2D circle) {
 		//solve to find left, right, top, and bottom points
 		double leftX 	= circle.getX()  - circle.getRadius();
 		double rightX	= circle.getX() + circle.getRadius();
@@ -80,5 +80,12 @@ class Circle2D {
 		else{
 			return false;
 		}
+	}
+	//Prints object as string
+	public String toString(){
+		String output = String.format("Circle:\nCenter: (%.2f, %.2f)\nRadius: %.2f\nArea: %.2f\nCircumference: %.2f",
+							this.getX(), this.getY(), this.getRadius(),
+							this.getX(), this.getCircumference());
+		return output;
 	}
 }
