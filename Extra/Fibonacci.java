@@ -7,7 +7,7 @@ class Fibonacci {
 		int num 	   = input.nextInt();
 		int sequence   = 0;
 		
-		while(num < 200 && sequence < 250){
+		while(num < 100000000 && sequence < 1000000000){
 			num		 = num + sequence;
 			System.out.print(" " + num);
 			sequence = num + sequence;
