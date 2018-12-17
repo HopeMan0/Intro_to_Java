@@ -40,7 +40,7 @@ class FireEmblem {
 				charisma	 = charisma + 5;
 			
 				range		 = range + 3;
-			
+							break;
 				}
 			else if(player.equalsIgnoreCase("Soldier")){
 				strength 	 = strength + 35;
@@ -52,7 +52,7 @@ class FireEmblem {
 			
 				range		 = range + 2;
 			
-
+				break;
 				}
 			else if(player.equalsIgnoreCase("Archer")){
 				strength 	 = strength + 15;
@@ -63,12 +63,15 @@ class FireEmblem {
 				charisma	 = charisma + 40;
 			
 				range		 = range + 5;
-			
+				
+				break;
 				}
+				
 			else{
 				System.out.print("Error");
+								
 			}
-		System.out.print("Str: " + strength);
+		System.out.print(" Str: " + strength);
 		System.out.print(" Stm: " + stamina);
 		System.out.print(" Rflx: " + reflex);
 		System.out.print(" Mind: " + mind);
@@ -76,13 +79,6 @@ class FireEmblem {
 		System.out.print(" Chr: " + charisma);
 		System.out.print(" Range: " + range);
 		
-	}
-	
-	//Combat
-	for(enemyHP = 1; enemyHP < 100){
-		if (enemyHP > 1){
-			continue;
-		}
 	}
 	
 }

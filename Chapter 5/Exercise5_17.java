@@ -17,7 +17,7 @@ class Exercise5_17 {
 		for (int count = 1; count <= user; count++){
 			//print space
 			for( int space = 1; space <= (user - count); space++){
-				System.out.print(" ");
+				System.out.print("   ");
 			}
 			
 			//prin left side
@@ -27,7 +27,7 @@ class Exercise5_17 {
 			
 			//print right side
 			for (int right = 2; right <= count; right++){
-				System.out.printf("%3d", right);
+				System.out.printf("%3d ", right);
 			}
 			System.out.println();
 		}
