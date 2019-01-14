@@ -2,13 +2,14 @@
 //Dec 18 2018
 
 class Triangle extends GeometricObject {
-	int sides = 3;
 	private double side1;
 	private double side2;
 	private double side3;
 	
 	Triangle() {
-			side1 = side2 = side3 = 1.0;
+			side1 = 1.0;
+			side2 = 1.0;
+			side3 = 1.0;
 		}
 	Triangle(double side1, double side2, double side3) { 
 			this.side1 = side1;

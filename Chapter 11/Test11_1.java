@@ -5,6 +5,7 @@ import java.util.*;
 
 class Test11_1 {
 	public static void main(String[] args) {
+		GeometricObject Triangle = new GeometricObject();
 		Scanner input = new Scanner(System.in);
 		System.out.print("Enter the length of side 1, side 2, and side 3: ");
 		double side1 = input.nextDouble();
